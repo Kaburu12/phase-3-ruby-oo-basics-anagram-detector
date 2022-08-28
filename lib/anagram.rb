@@ -7,9 +7,9 @@ class Anagram
     def initialize (word)
         @word = word
     end
-    def match(arr)
+    def match(array)
         matched = []
-        arr.map do |word|
+        array.map do |word|
             if word.chars.sort == @word.chars.sort
               matched.push(word)
             
